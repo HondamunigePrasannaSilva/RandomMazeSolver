@@ -18,17 +18,24 @@ vector<Cell> checkVisitedNeighbors(vector<Cell> maze, int column, int pos);
 vector<std::string> insertWalls(vector<Cell> &maze, int row, int column);
 vector<std::string> MazeGenerator(int &row, int &column);
 
-
+ 
 vector<std::string> MazeGenerator(int &row, int &column)
 {
     
     srand (time(NULL));
-    vector<Cell> maze = initMaze(row,column);
-  
-    vector<std::string> finalMaze = createMaze(maze, row, column);
+    
+    int r,c;
+    
+    if(row%2==0) r = row/2;
+    else  r = (row-1)/2;
+    if(column%2==0) c = column/2;
+    else  c = (column-1)/2;
+    
+    vector<Cell> maze = initMaze(r,c);
+    vector<std::string> finalMaze = createMaze(maze, r, c);
      
-    row = 2*row+1;
-    column = 2*column+1;
+    row = 2*r+1;
+    column = 2*c+1;
     return finalMaze;
 }
 vector<Cell> initMaze(int row, int column)
@@ -47,7 +54,7 @@ vector<Cell> initMaze(int row, int column)
 }
 vector<std::string> createMaze(vector<Cell> &maze, int row, int column)
 {
-    //scegliere la cella iniziare da cui inziare, cella(0,0) 
+    //scegliere la cella iniziare da cui inziare
     int init_position = rand() % maze.size();
 
     int position, random_neighbor;
@@ -93,6 +100,7 @@ vector<std::string> createMaze(vector<Cell> &maze, int row, int column)
                 {
                     maze[s_position].setwallDown(true);
                     maze[position].setwallUp(true);
+                    //maze[position].setwall(true);
                 }
                 else
                 {

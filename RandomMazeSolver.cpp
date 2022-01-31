@@ -29,10 +29,9 @@ int main()
     
     vector<std::string> maze = MazeGenerator(row, column);
     vector<int> path;
-    
     start_position.x = 1;
     start_position.y = 2;
-    finish_position.x = column-2;
+    finish_position.x = row-2;
     finish_position.y = column-2;
 
     cout <<"Start  position: ["<<start_position.x << ";"<<start_position.y<<"]"<<endl;
