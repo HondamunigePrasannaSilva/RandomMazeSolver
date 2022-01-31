@@ -8,13 +8,6 @@
 #define ROW    20
 #define COLOMN 20
 
-#define START_X  0
-#define START_Y  0
-#define FINISH_X ROW-1
-#define FINISH_y COLOMN-1
-
-#define MAX_ITERATION 10
-
 
 using std::chrono::high_resolution_clock;
 using std::chrono::duration_cast;
