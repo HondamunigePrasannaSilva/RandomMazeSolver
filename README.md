@@ -17,7 +17,7 @@ This project aims to parallelize a maze solver that do not use any maze-solving 
 
 # Maze Generator
 The maze is generated using Randomized depth-first search algorithm, more specifically the iterative implementation. 
-
+```
 - Choose the initial cell, mark it as visited and push it to the stack
 - While the stack is not empty
 	- Pop a cell from the stack and make it a current cell
@@ -26,7 +26,7 @@ The maze is generated using Randomized depth-first search algorithm, more specif
         	- Choose one of the unvisited neighbours
         	- Remove the wall between the current cell and the chosen cell
         	- Mark the chosen cell as visited and push it to the stack
-
+```
 link:https://en.wikipedia.org/wiki/Maze_generation_algorithm
 
 file: mazeGenerator.h
