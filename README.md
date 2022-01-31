@@ -35,13 +35,13 @@ file: mazeGenerator.h
 The maze solver is a random labyrinth solver algorithm, the meaning of random in this case means that at each point in the maze the algorithm will randomly choose one of the four directions[up, down, left, right]. 
 If the algorithm chooses a direction that is a wall, it will bounce and remain in the same spot and repeat the random choice of the direction.
 This algorithm will repeat until reaching the target spot of the maze.
-
+```
 1. while(particle find target spot)
 2. choose direction
 3. if(direction is a wall) go to 2
 4. else update path
 5. Go to 2
-
+```
 The sequential solver has only one 'particle' that search the path randomly, on the other hand, the parallel solver has multiple particles that randomly search the path. Once a particle finds the target spot, the algorithm stops.
 
 Sequential solver: RandomMazedSolverSeq.cpp
