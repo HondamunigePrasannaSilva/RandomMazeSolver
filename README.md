@@ -10,6 +10,7 @@
 
 ## General info
 > the dumbest way to solve a maze? simulate a gas of thousands of particles diffusing from the start point, until one particle reaches the exit. 
+
 link: https://twitter.com/matthen2/status/1440443280827699206
 
 This project aims to parallelize a maze solver that do not use any maze-solving algorithm but instead search the path randomly.
@@ -19,12 +20,12 @@ The maze is generated using Randomized depth-first search algorithm, more specif
 
 1. Choose the initial cell, mark it as visited and push it to the stack
 2. While the stack is not empty
-    1. Pop a cell from the stack and make it a current cell
-    2. If the current cell has any neighbours which have not been visited
-        1. Push the current cell to the stack
-        2. Choose one of the unvisited neighbours
-        3. Remove the wall between the current cell and the chosen cell
-        4. Mark the chosen cell as visited and push it to the stack
+	1. Pop a cell from the stack and make it a current cell
+	2. If the current cell has any neighbours which have not been visited
+        	1. Push the current cell to the stack
+        	2. Choose one of the unvisited neighbours
+        	3. Remove the wall between the current cell and the chosen cell
+        	4. Mark the chosen cell as visited and push it to the stack
 
 link:https://en.wikipedia.org/wiki/Maze_generation_algorithm
 
@@ -36,10 +37,10 @@ If the algorithm chooses a direction that is a wall, it will bounce and remain i
 This algorithm will repeat until reaching the target spot of the maze.
 
 1. while(particle find target spot)
-2.    choose direction
-3.    if(direction is a wall) go to 2
-4.    else update path
-5.    go to 2
+2. 	choose direction
+3.    	if(direction is a wall) go to 2
+4.    	else update path
+5.    	go to 2
 
 The sequential solver has only one 'particle' that search the path randomly, on the other hand, the parallel solver has multiple particles that randomly search the path. Once a particle finds the target spot, the algorithm stops.
 
