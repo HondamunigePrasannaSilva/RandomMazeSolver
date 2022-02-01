@@ -32,7 +32,7 @@ int main()
     cout <<"Start  position: ["<<start_position.x << ";"<<start_position.y<<"]"<<endl;
     cout <<"Finish position: ["<< finish_position.x << ";"<<finish_position.y<<"]"<<endl;
       
-    maze[start_position.x*column+start_position.y] = "->";
+    maze[start_position.x*column+start_position.y] = "->"; 
     maze[finish_position.x*column+finish_position.y] = "@";
    
     drawMaze(maze, row, column);
