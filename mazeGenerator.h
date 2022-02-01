@@ -105,7 +105,7 @@ vector<std::string> createMaze(vector<Cell> &maze, int row, int column)
                 else
                 {
                      maze[s_position].setwallUp(true);
-                    maze[position].setwallDown(true);
+                    maze[position].setwallDown(true); 
                 }
             }
             if(current_cell.getRow() == selected_neighbor.getRow())
