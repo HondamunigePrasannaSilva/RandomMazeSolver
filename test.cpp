@@ -36,7 +36,7 @@ int main()
     
     cout << "Labritino: " << ROW << "x"<< COLUMN << endl;
     
-    drawMaze(maze, row, column);
+    drawMaze(maze, row, column); 
     cout << "Risultati dei test ripetuti per: "<< TEST << endl;
 
 
