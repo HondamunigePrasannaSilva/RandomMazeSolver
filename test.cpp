@@ -5,11 +5,11 @@
 #include "mazeSolver.h"
 
 
-#define ROW    20
-#define COLUMN 20
+#define ROW    25
+#define COLUMN 25
 
 
-#define TEST 5
+#define TEST 10
 
 using std::chrono::high_resolution_clock;
 using std::chrono::duration_cast;
