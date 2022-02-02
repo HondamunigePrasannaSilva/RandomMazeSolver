@@ -15,7 +15,7 @@ link: https://twitter.com/matthen2/status/1440443280827699206
 
 This project aims to parallelize a maze solver that do not use any maze-solving algorithm but instead search the path randomly.
 
-# Maze Generator
+## Maze Generator
 The maze is generated using Randomized depth-first search algorithm, more specifically the iterative implementation. 
 ```
 - Choose the initial cell, mark it as visited and push it to the stack
