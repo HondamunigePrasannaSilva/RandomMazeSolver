@@ -1,12 +1,12 @@
 #include<iostream>
-#include"mazeGenerator.h"
+#include"MazeGenerator/mazeGenerator.h"
 #include <chrono>
 #include <omp.h>
 #include "mazeSolver.h"
 
 
-#define ROW    20
-#define COLOMN 20
+#define ROW    50
+#define COLOMN 50
 
 
 using std::chrono::high_resolution_clock;

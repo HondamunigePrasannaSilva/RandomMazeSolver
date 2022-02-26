@@ -1,5 +1,6 @@
 #include<iostream>
-#include"mazeGenerator.h"
+#include"MazeGenerator/mazeGenerator.h"
+#include <omp.h>
 #include <chrono>
 #include <omp.h>
 #include "mazeSolver.h"
@@ -46,7 +47,6 @@ int main()
 
     #pragma omp parallel shared(maze, start_position, finish_position, column, row, found) private(path) num_threads(8)
     { 
-        
         bool resolved = false;
         int id = omp_get_thread_num();
 

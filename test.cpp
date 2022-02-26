@@ -1,12 +1,13 @@
 #include<iostream>
-#include"mazeGenerator.h"
+#include"MazeGenerator/mazeGenerator.h"
 #include <chrono>
 #include <omp.h>
 #include "mazeSolver.h"
 
 
-#define ROW    25
-#define COLUMN 25
+
+#define ROW    10
+#define COLUMN 10
 
 
 #define TEST 10
