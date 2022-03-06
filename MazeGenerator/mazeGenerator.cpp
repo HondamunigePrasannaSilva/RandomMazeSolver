@@ -38,7 +38,7 @@ vector<std::string> createMaze(vector<Cell> &maze, int row, int column)
 {
     //scegliere la cella iniziare da cui inziare
     int init_position = rand() % maze.size();
-
+  
     int position, random_neighbor;
     // creazione dello stack per inserire le celle vistate
     vector<Cell> visited_cell;
