@@ -6,7 +6,6 @@
 * [Maze Generator](#maze-generating)
 * [Maze solver](#maze-solver)
 * [Test](#Test)
-* [To-Do](#to-do)
 
 ## General info
 > the dumbest way to solve a maze? simulate a gas of thousands of particles diffusing from the start point, until one particle reaches the exit. 
@@ -48,12 +47,8 @@ Sequential solver: RandomMazedSolverSeq.cpp
 Parallel solver:   RandomMazedSolver.cpp
 
 ## Test
-due to the maze being generated randomly, is it not possible to test the two solvers with the same maze independently. The 'test. cpp' is a test code in which the solvers are used to solve the same maze multiple times, in this way we obtain more accurate statistics.
+Due to the maze being generated randomly, is it not possible to test the two solvers with the same maze independently. The 'test. cpp' is a test code in which the solvers are used to solve the same maze multiple times, in this way we obtain more accurate statistics.
 file: test.cpp
 
 ## Technologies
 * OpenMP 
-
-## To Do:
-* Report
-* Presentation
